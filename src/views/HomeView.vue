@@ -1,6 +1,11 @@
 <template>
   <section id="home" class="home">
     <div class="container-fluid">
+        <div class="row">
+          <div class="col "> <img src="https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png" alt="Rayhaan Khan"></div>
+          <div class="col colT"><p class="text">I'm Mohamed Rayhaan Khan <br> <span>An aspiring Web Developer</span></p></div>
+        </div>
+      </div>
       <!-- <div class="container">
         <div class="image">
           <img src="https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png" alt="Rayhaan Khan">
@@ -8,7 +13,7 @@
         <div class="imageText"><p class="text">I'm Mohamed Rayhaan Khan <br> <span>An aspiring Web Developer</span></p></div>
         <button class="btn1">Contact Me!</button>
       </div> -->
-      <div class="card carrdd">
+      <!-- <div class="card carrdd">
         <div class="backgroundImg"></div>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -17,9 +22,8 @@
             bulk of the card's content.
           </p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
+        </div> -->
+     <!-- </div> -->
   </section>
 </template>
 
@@ -34,7 +38,7 @@ export default {};
 .carrdd{
   width: 20rem;
 }
-
+/* 
 .backgroundImg {
   display: flex;
   justify-content: center;
@@ -45,29 +49,29 @@ export default {};
   background-size: cover;
   background-image: url(https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png);
   background-repeat: no-repeat;
+} */
+ 
+img {
+  background-color: #0E2954;
+  border-radius: 50rem 20rem;
 }
-/* 
-.container-fluid {
+
+ .container-fluid {
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image {
-  position: relative;
+.colT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45rem;
 }
 
-img {
-  background-color: #0E2954;
-  filter: drop-shadow(16px 16px 8px #0E2954  );
-  border-radius: 10rem 4rem;
-}
-
-.imageText {
-  position: absolute;
-  top: 63%;
-  left: 29%;
+span {
+  font-size: 2rem;
 }
 
 .text {
@@ -76,7 +80,5 @@ img {
   text-shadow: 2px 1px black;
 }
 
-.btn1 {
 
-} */
 </style>
