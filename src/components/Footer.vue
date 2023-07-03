@@ -39,4 +39,8 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+
+.text {
+  text-align: center;
+}
 </style>
