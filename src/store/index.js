@@ -11,17 +11,17 @@ export default createStore({
   },
   getters: {},
   mutations: {
-    setSkills(state, skills) {
-      state.skills = skills;
+    setSkills(state, value) {
+      state.skills = value;
     },
-    setEducation(state, education) {
-      state.education = education;
+    setEducation(state, value) {
+      state.education = value;
     },
-    setProjects(state, projects) {
-      state.projects = projects;
+    setProjects(state, value) {
+      state.projects = value;
     },
-    setTestimonials(state, testimonials) {
-      state.testimonials = testimonials;
+    setTestimonials(state, value) {
+      state.testimonials = value;
     },
   },
 
@@ -36,7 +36,7 @@ export default createStore({
           context.commit("setSkills", skills);
         }
       } catch (e) {
-        console.log(e.message);
+        console.log(e.message)
       }
     },
     async fetchEducation(context) {
@@ -49,7 +49,7 @@ export default createStore({
           context.commit("setEducation", education);
         }
       } catch (e) {
-        console.log(e.message);
+        console.log(e.message)
       }
     },
     async fetchProjects(context) {
@@ -62,7 +62,7 @@ export default createStore({
           context.commit("setProjects", projects);
         }
       } catch (e) {
-        console.log(e.message);
+        console.log(e.message)
       }
     },
     async fetchTestimonials(context) {
@@ -75,7 +75,7 @@ export default createStore({
           context.commit("setTestimonials", testimonials);
         }
       } catch (e) {
-        console.log(e.message);
+        console.log(e.message)
       }
     },
   },
