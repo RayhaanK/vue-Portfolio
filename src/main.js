@@ -10,4 +10,7 @@ import 'bootstrap'
 // custom CSS
 import '@/assets/CSS/style.css'
 
-createApp(App).use(store).use(router).mount('#app')
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+createApp(App).use(store).use(router).use(AOS.init()).mount('#app')
