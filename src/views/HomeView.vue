@@ -11,8 +11,8 @@
         <div class="col colT">
           <p class="text">
             I'm Mohamed Rayhaan Khan <br />
-            <span>An aspiring Web Developer</span>
           </p>
+         <p class="text"><span class="subT">An aspiring Web Developer</span></p> 
           <div class="contact">
             <router-link to="/contact"><button class="btnC">Contact Me</button></router-link>
           </div>
@@ -65,5 +65,11 @@ span {
   padding: 0.4rem;
   border-radius: 2rem;
   border: 0;
+  background-color: #87A7A1;
+}
+
+.subT {
+  text-align: center;
+
 }
 </style>
