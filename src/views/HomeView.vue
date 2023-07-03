@@ -1,29 +1,24 @@
 <template>
   <section id="home" class="home">
     <div class="container-fluid">
-        <div class="row">
-          <div class="col "> <img src="https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png" alt="Rayhaan Khan"></div>
-          <div class="col colT"><p class="text">I'm Mohamed Rayhaan Khan <br> <span>An aspiring Web Developer</span></p></div>
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png"
+            alt="Rayhaan Khan"
+          />
+        </div>
+        <div class="col colT">
+          <p class="text">
+            I'm Mohamed Rayhaan Khan <br />
+            <span>An aspiring Web Developer</span>
+          </p>
+          <div class="contact">
+            <router-link to="/contact"><button class="btnC">Contact Me</button></router-link>
+          </div>
         </div>
       </div>
-      <!-- <div class="container">
-        <div class="image">
-          <img src="https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png" alt="Rayhaan Khan">
-        </div>
-        <div class="imageText"><p class="text">I'm Mohamed Rayhaan Khan <br> <span>An aspiring Web Developer</span></p></div>
-        <button class="btn1">Contact Me!</button>
-      </div> -->
-      <!-- <div class="card carrdd">
-        <div class="backgroundImg"></div>
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div> -->
-     <!-- </div> -->
+    </div>
   </section>
 </template>
 
@@ -35,28 +30,13 @@ export default {};
 .home {
   height: 90vh;
 }
-.carrdd{
-  width: 20rem;
-}
-/* 
-.backgroundImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 100%;
-  border: 1px solid red;
-  background-size: cover;
-  background-image: url(https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png);
-  background-repeat: no-repeat;
-} */
- 
+
 img {
-  background-color: #0E2954;
+  background-color: #0e2954;
   border-radius: 50rem 20rem;
 }
 
- .container-fluid {
+.container-fluid {
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -67,6 +47,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 45rem;
 }
 
@@ -80,5 +61,9 @@ span {
   text-shadow: 2px 1px black;
 }
 
-
+.btnC {
+  padding: 0.4rem;
+  border-radius: 2rem;
+  border: 0;
+}
 </style>
