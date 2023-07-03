@@ -4,11 +4,11 @@
       <h1 class="display-2 text-center">Resume</h1>
       <div class="container">
         <div class="row rowF">
-          <div class="first">
+          <div class="first" data-aos="fade-right">
             <div class="col colE">
-              <h4 class="mb-3">EDUCATION</h4>
+              <h4 class="mb-3 mx-4">EDUCATION</h4>
               <ul v-for="item in education" :key="item.ID">
-                <li>
+                <li class="bullet">
                   {{ item.title }}
                 </li>
                 <li class="none">
@@ -21,7 +21,7 @@
               </ul>
             </div>
           </div>
-          <div class="second">
+          <div class="second" data-aos="fade-left">
             <h4 class="text-center mb-3">SKILLS</h4>
             <div class="row rowS row-cols-1 row-cols-sm-2 row-cols-lg-3">
               <div class="col" v-for="item in skills" :key="item.ID">
@@ -78,6 +78,7 @@ h4 {
   margin-top: 5rem;
   text-decoration: underline;
   float: left;
+  color: #64ffda;
 }
 
 .lis {
@@ -86,6 +87,18 @@ h4 {
   justify-content: center;
   align-items: center;
   width: 80%;
+}
+
+ul {
+    list-style: none;
+}
+
+.bullet::before {
+    content: "\2022";
+    padding: 0.3rem;
+    width: 1em;
+    margin-left: -1em;
+    color: #64ffda;
 }
 
 .line {
