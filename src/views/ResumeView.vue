@@ -4,7 +4,7 @@
       <h1 class="display-2 text-center">Resume</h1>
       <div class="container">
         <div class="row rowF">
-          <div class="first" data-aos="fade-right">
+          <div class="first" data-aos="fade-right"  data-aos-duration="1000">
             <div class="col colE">
               <h4 class="mb-3 mx-4">EDUCATION</h4>
               <ul v-for="item in education" :key="item.ID">
@@ -21,7 +21,7 @@
               </ul>
             </div>
           </div>
-          <div class="second" data-aos="fade-left">
+          <div class="second" data-aos="fade-left"  data-aos-duration="1000">
             <h4 class="text-center mb-3">SKILLS</h4>
             <div class="row rowS row-cols-1 row-cols-sm-2 row-cols-lg-3">
               <div class="col" v-for="item in skills" :key="item.ID">
