@@ -74,6 +74,11 @@ export default {
   border-radius: 1.5rem;
 }
 
+.card:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.2s;
+}
+
 .card-title {
   height: 50px;
   border-bottom: 1px solid #64ffda;
