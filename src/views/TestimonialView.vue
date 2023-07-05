@@ -1,15 +1,84 @@
 <template>
-    <div>
-
+  <section id="testimonial" class="testimonial">
+    <div class="container">
+      <h1 class="display-2 text-center">Testimonials</h1>
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3" v-for="item in testimonials" :key="item.ID">
+            <div class="row g-0">
+              <div class="col-md-4 colI line">
+                <img :src="item.Image" class="img-fluid" :alt="item.Name" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{ item.Name }}</h5>
+                  <p class="card-text">
+                   "{{ item.Content }}"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+  computed: {
+    testimonials() {
+      return this.$store.state.testimonials;
+    },
+  },
+  mounted() {
+    this.$store.dispatch("fetchTestimonials");
+  },
+};
 </script>
 
 <style scoped>
+.colI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18rem;
+}
 
+.line {
+  border-right: 1px solid #84a7a1;
+}
+
+.card {
+  background-color: #0e2954;
+  color: #84a7a1;
+}
+
+img {
+  height: 14rem;
+  border-radius: 1rem;
+}
+
+.card-title {
+  text-decoration: underline;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+@media (max-width: 1000px) {
+  .card-text {
+    height: max-content;
+  }
+}
+@media (max-width: 767.5px) {
+  .line {
+    border: 0;
+  }
+}
 </style>
