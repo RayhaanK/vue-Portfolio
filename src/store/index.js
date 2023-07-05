@@ -69,7 +69,7 @@ export default createStore({
       try {
         let res = await fetch(dataUrl);
         let { testimonials } = await res.json();
-        if (projects) {
+        if (testimonials) {
           context.commit("setTestimonials", testimonials);
         } else {
           context.commit("setTestimonials", testimonials);
