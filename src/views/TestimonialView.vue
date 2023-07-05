@@ -4,7 +4,7 @@
       <h1 class="display-2 text-center">Testimonials</h1>
       <div class="row">
         <div class="col">
-          <div class="card mb-3" v-for="item in testimonials" :key="item.ID">
+          <div class="card mb-3" v-for="item in testimonials" :key="item.ID" data-aos="fade-right">
             <div class="row g-0">
               <div class="col-md-4 colI line">
                 <img :src="item.Image" class="img-fluid" :alt="item.Name" />
