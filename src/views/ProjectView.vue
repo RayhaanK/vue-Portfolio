@@ -25,8 +25,12 @@
                 {{ item.Description }}
               </p>
               <div class="links">
-                <a :href="item.GitHub" class="card-link">GitHub</a>
-                <a :href="item.Netlify" class="card-link">Live Server</a>
+                <a :href="item.GitHub" class="card-link"
+                  ><button>GitHub</button></a
+                >
+                <a :href="item.Netlify" class="card-link"
+                  ><button>Live Server</button></a
+                >
               </div>
             </div>
           </div>
@@ -106,11 +110,22 @@ img {
 
 a {
   text-decoration: none;
-  color: #64ffda;
 }
 
-a:hover {
+button {
+  background-color: #84a7a1;
+  color: #001847;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  border: 0;
+}
+
+button:hover {
+  background-color: #001847;
   color: #84a7a1;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+  transform: scale(1.1);
 }
 
 @media (max-width: 1500px) {
