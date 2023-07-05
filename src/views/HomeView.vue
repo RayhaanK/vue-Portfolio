@@ -1,8 +1,8 @@
 <template>
   <section id="home" class="home">
-    <div class="container-fluid">
+    <div class="container-fluid mt-md-4 mt-lggi-0 ">
       <div class="row">
-        <div class="col" data-aos="zoom-in"  data-aos-duration="1000">
+        <div class="col d-flex" data-aos="zoom-in"  data-aos-duration="1000">
           <img
             src="https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png"
             alt="Rayhaan Khan"
@@ -10,11 +10,8 @@
         </div>
         <div class="col colT" data-aos="zoom-in-right">
           <div class="text1">
-            <p class="text2">
-              <span class="bold">I'm,</span>
-            </p>
             <p class="text2 me">
-              <span class="me"> Mohamed Rayhaan Khan</span>
+              <span class="me">I'm, Mohamed Rayhaan Khan</span>
             </p>
           </div>
           <p class="text2">
@@ -22,7 +19,7 @@
           </p>
           <div class="contact">
             <router-link to="/contact"
-              ><button class="btnC">Contact Me</button></router-link
+              ><button class="btnC"><i class="fa-solid fa-envelope" style="color: #84a7a1;"></i>Contact Me</button></router-link
             >
           </div>
         </div>
@@ -71,16 +68,13 @@ img {
   padding: 0.4rem;
   border-radius: 2rem;
   border: 0;
-  background-color: #64ffda;
+  background-color: #0e2954;
+  color: #84A7A1;
 }
 
 .subT {
   text-align: center;
   font-size: 2rem;
-}
-
-.bold {
-  color: #64ffdaff;
 }
 
 .text1 {
@@ -94,6 +88,10 @@ img {
   animation: typing 1.4s steps(20), cursor 0.4s step-end infinite alternate;
 }
 
+i {
+  margin-right: 0.5rem;
+}
+
 @keyframes cursor {
   50% {
     border-color: transparent;
@@ -103,5 +101,77 @@ img {
   from {
     width: 0;
   }
+}
+
+@media (max-width:1200px) {
+  .col {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 30rem;
+  }
+}
+
+@media (max-width:700px) {
+
+  .colT {
+  width: 40rem;
+}
+  
+.text2 {
+  padding-inline: 0.4rem;
+  font-size: 2rem;
+}
+}
+@media (max-width:550px) {
+
+  .colT {
+  width: 26rem;
+}
+  
+.text2 {
+  padding-inline: 0.4rem;
+  font-size: 1.7rem;
+}
+
+.subT {
+  font-size: 1.5rem;
+}
+
+.btnC {
+  padding: 0.2rem;
+  border-radius: 2rem;
+  border: 0;
+  background-color: #0e2954;
+  color: #84A7A1;
+}
+
+img {
+  width: 25rem;
+  background-color: #0e2954;
+  border-radius: 27rem 10rem;
+}
+}
+@media (max-width:400px) {
+
+  .colT {
+  width: 20rem;
+  margin-top: 0;
+}
+  
+.text2 {
+  padding-inline: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.subT {
+  font-size: 1rem;
+}
+
+img {
+  width: 18rem;
+}
 }
 </style>
