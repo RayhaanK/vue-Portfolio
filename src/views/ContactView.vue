@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <h1 class="display-2 text-center">Contact Me</h1>
     </div>
-    <div class="container-fluid contactMe">
+    <div class="container-fluid contactMe" data-aos="zoom-in" data-aos-duration="1000">
       <form action="https://formspree.io/f/xyyaoapj" method="POST">
         <div class="mb-1 p-3 mt-4">
           <label for="exampleFormControlInput1" class="form-label"
