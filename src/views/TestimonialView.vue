@@ -55,6 +55,11 @@ export default {
   color: #84a7a1;
 }
 
+.card:hover {
+  transform: scale(1.01);
+  transition: ease-out 0.2s;
+}
+
 img {
   height: 14rem;
   border-radius: 1rem;
