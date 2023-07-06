@@ -25,10 +25,10 @@
                 {{ item.Description }}
               </p>
               <div class="links">
-                <a :href="item.GitHub" class="card-link"
+                <a :href="item.GitHub" class="card-link" target="_blank"
                   ><button>GitHub</button></a
                 >
-                <a :href="item.Netlify" class="card-link"
+                <a :href="item.Netlify" class="card-link" target="_blank"
                   ><button>Live Server</button></a
                 >
               </div>
