@@ -2,7 +2,7 @@
   <section id="about" class="about">
     <div class="container">
       <h1 class="display-2 text-center">About Me</h1>
-      <div class="row mt-5">
+      <div class="row mt-3">
         <div class="col">
           <div class="card mb-3" data-aos="fade-right">
             <div class="row g-0">
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="links">
+      <div class="links" data-aos="fade-left">
         <a
           href="https://drive.google.com/file/d/1ZqAWPHu4wzKdGO80qUm5uxg9I0hg9-Qs/view?usp=sharing"
           target="_blank"

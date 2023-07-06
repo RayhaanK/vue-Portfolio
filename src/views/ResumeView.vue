@@ -26,7 +26,10 @@
             <div class="row rowS row-cols-1 row-cols-sm-2 row-cols-lg-3">
               <div class="col" v-for="item in skills" :key="item.ID">
                 <i :class="item.icon" style="color: #84a7a1"></i>
-                <p>{{ item.title }}</p>
+                <p>{{ item.title }} <br>
+                beginner <br>
+                working with this was fun
+              </p>
               </div>
             </div>
           </div>
