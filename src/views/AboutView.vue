@@ -28,11 +28,11 @@
                       playing games, and coding. <br />
                       Over the years I had faced many challenges that I had to
                       overcome and because of this i gained a lot of new skills
-                      that has further improved my potential. These skills include
-                      being able to work as a leader or as a member, being able to
-                      be resilient in all situations. I also have great
-                      communication skills and with that I will be able to work
-                      with anyone new.
+                      that has further improved my potential. These skills
+                      include being able to work as a leader or as a member,
+                      being able to be resilient in all situations. I also have
+                      great communication skills and with that I will be able to
+                      work with anyone new.
                     </p>
                   </div>
                 </div>
@@ -79,6 +79,12 @@ export default {};
 .card {
   background-color: #0e2954;
   color: #84a7a1;
+  border-radius: 2rem;
+}
+
+.card:hover {
+  transform: scale(1);
+  transition: ease-in 0.2s;
 }
 
 img {
@@ -135,6 +141,10 @@ button:hover {
   .card {
     height: max-content;
   }
+  .card-text {
+    height: max-content;
+  }
+
   img {
     border-bottom: 1px solid #84a7a1;
   }
@@ -148,15 +158,20 @@ button:hover {
   .about {
     height: max-content;
   }
-  .card-text {
-    height: max-content;
-  }
 
   button {
     padding: 0.6rem;
     margin: 0rem;
     font-size: 0.8rem;
     margin-bottom: 1rem;
+  }
+  button:hover {
+    transition: none;
+    transform: none;
+  }
+  .card:hover {
+    transform: none;
+    transition: none;
   }
 }
 </style>

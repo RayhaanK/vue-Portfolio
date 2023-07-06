@@ -86,4 +86,14 @@ img {
     border: 0;
   }
 }
+@media (max-width: 568px) {
+  button:hover {
+    transition: none;
+    transform: none;
+  }
+  .card:hover {
+    transform: none;
+    transition: none;
+  }
+}
 </style>
