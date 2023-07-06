@@ -1,6 +1,6 @@
 <template>
   <section id="home" class="home">
-    <div class="container-fluid mt-md-4 mt-lggi-0 ">
+    <div class="container-fluid mt-md-4 mt-0 ">
       <div class="row">
         <div class="col d-flex" data-aos="zoom-in"  data-aos-duration="1000">
           <img
@@ -18,8 +18,8 @@
             <span class="subT">An aspiring Web Developer</span>
           </p>
           <div class="contact">
-            <router-link to="/contact"
-              ><button class="btnC"><i class="fa-solid fa-envelope" style="color: #84a7a1;"></i>Contact Me</button></router-link
+            <router-link to="/about"
+              ><button class="btnC"><i class="fa-brands fa-golang fa-2xl" style="color: #84a7a1;"></i>Find Out More!</button></router-link
             >
           </div>
         </div>

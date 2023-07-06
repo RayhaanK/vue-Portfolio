@@ -4,7 +4,7 @@
       <h1 class="display-2 text-center">Resume</h1>
       <div class="container">
         <div class="row rowF">
-          <div class="first" data-aos="fade-right"  data-aos-duration="1000">
+          <div class="first" data-aos="fade-right" data-aos-duration="1000">
             <div class="col colE">
               <h4 class="mb-3 mx-4">EDUCATION</h4>
               <ul v-for="item in education" :key="item.ID">
@@ -21,15 +21,15 @@
               </ul>
             </div>
           </div>
-          <div class="second" data-aos="fade-left"  data-aos-duration="1000">
+          <div class="second" data-aos="fade-left" data-aos-duration="1000">
             <h4 class="text-center mb-3">SKILLS</h4>
             <div class="row rowS row-cols-1 row-cols-sm-2 row-cols-lg-3">
               <div class="col" v-for="item in skills" :key="item.ID">
                 <i :class="item.icon" style="color: #84a7a1"></i>
                 <p>{{ item.title }} <br>
-                beginner <br>
-                working with this was fun
-              </p>
+                <span class="mastery">{{ item.mastery }}</span> <br>
+                <span class="description">{{ item.description }}</span>
+                </p>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default {
 }
 
 h4 {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   text-decoration: underline;
   float: left;
   color: #64ffda;
@@ -93,20 +93,20 @@ h4 {
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .bullet::before {
-    content: "\2022";
-    padding: 0.3rem;
-    width: 1em;
-    margin-left: -1em;
-    color: #64ffda;
+  content: "\2022";
+  padding: 0.3rem;
+  width: 1em;
+  margin-left: -1em;
+  color: #64ffda;
 }
 
 .line {
   width: 60%;
-  border-bottom: 2px solid #84A7A1;
+  border-bottom: 2px solid #84a7a1;
   margin-top: 2.5rem;
 }
 .desc {
@@ -128,6 +128,36 @@ ul {
   text-align: center;
 }
 
+.description {
+  display: block;
+  height: 70px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #84a7a1;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+.mastery {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+  .resume {
+    height: max-content;
+  }
+}
 @media (max-width: 1000px) {
   .resume {
     height: max-content;
@@ -140,7 +170,6 @@ ul {
 
   .first {
     width: 40%;
-    height: max-content;
   }
 
   .second {

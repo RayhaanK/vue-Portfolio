@@ -2,37 +2,39 @@
   <section id="about" class="about">
     <div class="container">
       <h1 class="display-2 text-center">About Me</h1>
-      <div class="row mt-3">
-        <div class="col">
-          <div class="card mb-3" data-aos="fade-right">
-            <div class="row g-0">
-              <div class="col-md-4 colI line">
-                <img
-                  src="https://i.postimg.cc/0NYJhdSq/rayhaan-Khan-About1.png"
-                  class="img-fluid"
-                  alt="Rayhaan Khan"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Rayhaan Khan</h5>
-                  <p class="card-text">
-                    My name is Mohamed Rayhaan Khan. <br />
-                    My date of birth is 18/04/2004 <br />
-                    My home language is English and I can speak Afrikaans too.
-                    <br />
-                    I currently live in Cape Town. <br />
-                    My hobbies include a variety of things. I enjoy going
-                    outdoors, interacting with friends, listening to music,
-                    playing games, and coding. <br />
-                    Over the years I had faced many challenges that I had to
-                    overcome and because of this i gained a lot of new skills
-                    that has further improved my potential. These skills include
-                    being able to work as a leader or as a member, being able to
-                    be resilient in all situations. I also have great
-                    communication skills and with that I will be able to work
-                    with anyone new.
-                  </p>
+      <div class="container" data-aos="fade-right">
+        <div class="row mt-3">
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4 colI line">
+                  <img
+                    src="https://i.postimg.cc/0NYJhdSq/rayhaan-Khan-About1.png"
+                    class="img-fluid"
+                    alt="Rayhaan Khan"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Rayhaan Khan</h5>
+                    <p class="card-text">
+                      My name is Mohamed Rayhaan Khan. <br />
+                      My date of birth is 18/04/2004 <br />
+                      My home language is English and I can speak Afrikaans too.
+                      <br />
+                      I currently live in Cape Town. <br />
+                      My hobbies include a variety of things. I enjoy going
+                      outdoors, interacting with friends, listening to music,
+                      playing games, and coding. <br />
+                      Over the years I had faced many challenges that I had to
+                      overcome and because of this i gained a lot of new skills
+                      that has further improved my potential. These skills include
+                      being able to work as a leader or as a member, being able to
+                      be resilient in all situations. I also have great
+                      communication skills and with that I will be able to work
+                      with anyone new.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
