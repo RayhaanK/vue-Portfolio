@@ -65,4 +65,11 @@ li {
 button {
     background-color: #1F6E8C;
 }
+
+@media (max-width: 992px) {
+  .container {
+    position: relative;
+
+}
+}
 </style>
