@@ -25,17 +25,17 @@
             <h4 class="text-center mb-3">SKILLS</h4>
             <div class="row rowS row-cols-1 row-cols-sm-2 row-cols-lg-3">
               <div class="col" v-for="item in skills" :key="item.ID">
-                <i :class="item.icon" style="color: #84a7a1"></i>
-                <p>{{ item.title }} <br>
-                <span class="mastery">{{ item.mastery }}</span> <br>
-                <span class="description">{{ item.description }}</span>
-                </p>
+                  <i :class="item.icon" style="color: #84a7a1"></i>
+                  <p>{{ item.title }} <br>
+                  <span class="mastery">{{ item.mastery }}</span> <br>
+                  <span class="description">{{ item.description }}</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 </template>
 
@@ -70,6 +70,7 @@ export default {
   width: 40%;
   border-right: 1px solid #84a7a1;
 }
+
 
 .second {
   width: 60%;

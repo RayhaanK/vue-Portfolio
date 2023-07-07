@@ -3,53 +3,57 @@
     <div class="container-fluid">
       <h1 class="display-2 text-center">Contact Me</h1>
     </div>
-    <div class="container-fluid contactMe" data-aos="zoom-in" data-aos-duration="1000">
+    <div
+      class="container-fluid contactMe"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    >
       <form action="https://formspree.io/f/xyyaoapj" method="POST">
         <div class="mb-1 p-3 mt-4">
-          <label for="exampleFormControlInput1" class="form-label"
+          <label for="name" class="form-label"
             >First Name:</label
           >
           <input
             type="First Name"
             name="First Name"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="name"
             placeholder="Name"
           />
         </div>
         <div class="mb-1 p-3">
-          <label for="exampleFormControlInput1" class="form-label"
+          <label for="surname" class="form-label"
             >Last Name:</label
           >
           <input
             type="Last Name"
             name="Last Name"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="surname"
             placeholder="Surname
             "
           />
         </div>
         <div class="mb-3 p-3">
-          <label for="exampleFormControlInput1" class="form-label"
+          <label for="email" class="form-label"
             >Email address:</label
           >
           <input
             type="email"
             name="email"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="email"
             placeholder="name@example.com"
           />
         </div>
         <div class="mb-3 p-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
+          <label for="feedback" class="form-label"
             >Please leave a message:</label
           >
           <textarea
             name="message"
             class="form-control"
-            id="exampleFormControlTextarea1"
+            id="feedback"
             rows="3"
           ></textarea>
           <div class="btn0">
@@ -63,7 +67,39 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods() {
+    let firstName = document.querySelector("#name");
+    let lastName = document.querySelector("#surname");
+    let email = document.querySelector("#email");
+    let feedback = document.querySelector("#feedback");
+
+    if(firstName == "") {
+        alert('First name is required');
+        return false;
+    }
+
+    if(lastName == "") {
+        alert('Last name is required');
+        return false;
+    }
+
+    if(feedback == "") {
+        alert('Feedback is required');
+        return false
+    }
+
+    if(email == "") {
+        alert('Email is required')
+        return false
+    }else if(!email.value == '@') {
+        alert('Invalid Email')
+        return false
+    }
+
+    return true
+}
+};
 </script>
 
 <style scoped>
