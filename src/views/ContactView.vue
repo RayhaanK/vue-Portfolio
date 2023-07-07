@@ -74,7 +74,7 @@ export default {};
 
 <style scoped>
 .contact {
-  height: 100vh;
+  height: 85vh;
 }
 form {
   width: 70%;
