@@ -69,7 +69,12 @@ button {
 @media (max-width: 992px) {
   .container {
     position: relative;
+    width: 100%;
+}
 
+.navbar {
+  width: 100%;
+  text-align: center;
 }
 }
 </style>

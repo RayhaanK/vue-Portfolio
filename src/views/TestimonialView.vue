@@ -1,7 +1,6 @@
 <template>
   <section id="testimonial" class="testimonial">
-    <div class="container">
-      <h1 class="display-2 text-center">Testimonials</h1>
+    <div class="container mt-5">
       <div class="row">
         <div class="col">
           <div class="card mb-3" v-for="item in testimonials" :key="item.ID" data-aos="fade-right">

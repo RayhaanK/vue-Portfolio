@@ -1,7 +1,6 @@
 <template>
   <section id="resume" class="resume">
-    <div class="container">
-      <h1 class="display-2 text-center">Resume</h1>
+    <div class="container mt-5">
       <div class="container">
         <div class="row rowF">
           <div class="first" data-aos="fade-right" data-aos-duration="1000">
@@ -136,7 +135,7 @@ ul {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 1px;
   height: 10px;
 }
 

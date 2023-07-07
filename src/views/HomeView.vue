@@ -1,8 +1,8 @@
 <template>
   <section id="home" class="home">
-    <div class="container-fluid mt-md-4 mt-0 ">
+    <div class="container-fluid mt-md-4 mt-0">
       <div class="row">
-        <div class="col d-flex" data-aos="zoom-in"  data-aos-duration="1000">
+        <div class="col d-flex" data-aos="zoom-in" data-aos-duration="1000">
           <img
             src="https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png"
             alt="Rayhaan Khan"
@@ -19,7 +19,10 @@
           </p>
           <div class="contact">
             <router-link to="/about"
-              ><button class="btnC"><i class="fa-brands fa-golang fa-2xl" style="color: #84a7a1;"></i>Find Out More!</button></router-link
+              ><button class="btnC">
+                <i class="fa-brands fa-golang fa-2xl" style="color: #84a7a1"></i
+                >Find Out More!
+              </button></router-link
             >
           </div>
         </div>
@@ -69,7 +72,14 @@ img {
   border-radius: 2rem;
   border: 0;
   background-color: #0e2954;
-  color: #84A7A1;
+  color: #84a7a1;
+}
+
+.btnC:hover {
+  background-color: #001847;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+  transform: scale(1.1);
 }
 
 .subT {
@@ -103,7 +113,7 @@ i {
   }
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .col {
     display: flex;
     justify-content: center;
@@ -114,64 +124,65 @@ i {
   }
 }
 
-@media (max-width:700px) {
-
+@media (max-width: 700px) {
   .colT {
-  width: 40rem;
-}
-  
-.text2 {
-  padding-inline: 0.4rem;
-  font-size: 2rem;
-}
-}
-@media (max-width:550px) {
+    width: 40rem;
+  }
 
+  .text2 {
+    padding-inline: 0.4rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 550px) {
   .colT {
-  width: 26rem;
-}
-  
-.text2 {
-  padding-inline: 0.4rem;
-  font-size: 1.7rem;
-}
+    width: 26rem;
+  }
 
-.subT {
-  font-size: 1.5rem;
-}
+  .text2 {
+    padding-inline: 0.4rem;
+    font-size: 1.7rem;
+  }
 
-.btnC {
-  padding: 0.2rem;
-  border-radius: 2rem;
-  border: 0;
-  background-color: #0e2954;
-  color: #84A7A1;
-}
+  .subT {
+    font-size: 1.5rem;
+  }
 
-img {
-  width: 25rem;
-  background-color: #0e2954;
-  border-radius: 27rem 10rem;
-}
-}
-@media (max-width:400px) {
+  .btnC {
+    padding: 0.2rem;
+    border-radius: 2rem;
+    border: 0;
+    background-color: #0e2954;
+    color: #84a7a1;
+  }
+  .btnC:hover {
+    transition: none;
+    transform: none;
+  }
 
+  img {
+    width: 25rem;
+    background-color: #0e2954;
+    border-radius: 27rem 10rem;
+  }
+}
+@media (max-width: 400px) {
   .colT {
-  width: 20rem;
-  margin-top: 0;
-}
-  
-.text2 {
-  padding-inline: 0.4rem;
-  font-size: 1.4rem;
-}
+    width: 20rem;
+    margin-top: 0;
+  }
 
-.subT {
-  font-size: 1rem;
-}
+  .text2 {
+    padding-inline: 0.4rem;
+    font-size: 1.4rem;
+  }
 
-img {
-  width: 18rem;
-}
+  .subT {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 18rem;
+  }
 }
 </style>
