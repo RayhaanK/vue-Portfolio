@@ -113,6 +113,7 @@ button {
   padding: 0.7rem;
   border: 0;
   margin: 0.7rem;
+  width: 13rem;
 }
 
 button:hover {
@@ -163,6 +164,7 @@ button:hover {
     margin: 0rem;
     font-size: 0.8rem;
     margin-bottom: 1rem;
+    width: 9.5rem;
   }
   button:hover {
     transition: none;
