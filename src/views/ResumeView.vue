@@ -192,5 +192,11 @@ ul {
     width: 100%;
     height: max-content;
   }
+
+  .colE {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
 }
 </style>
