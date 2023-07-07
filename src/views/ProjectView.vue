@@ -122,6 +122,7 @@ button {
   border-radius: 1rem;
   padding: 0.3rem;
   border: 0;
+  width: 7rem;
 }
 
 button:hover {

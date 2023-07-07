@@ -32,7 +32,7 @@ i {
 
 footer {
   width: 100%;
-  height: 15vh;
+  height: 100%;
   background-color: #0e2954;
   display: flex;
   justify-content: center;
