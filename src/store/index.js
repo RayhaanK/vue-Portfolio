@@ -33,10 +33,10 @@ export default createStore({
         if (skills) {
           context.commit("setSkills", skills);
         } else {
-          context.commit("setSkills", skills);
+          context.commit("setMessage", "No skills");
         }
       } catch (e) {
-        console.log(e.message)
+        context.commit("setMessage", "An error occurred.");
       }
     },
     async fetchEducation(context) {
@@ -46,10 +46,10 @@ export default createStore({
         if (education) {
           context.commit("setEducation", education);
         } else {
-          context.commit("setEducation", education);
+          context.commit("setMessage", "No education");
         }
       } catch (e) {
-        console.log(e.message)
+        context.commit("setMessage", "An error occurred.");
       }
     },
     async fetchProjects(context) {
@@ -59,10 +59,10 @@ export default createStore({
         if (projects) {
           context.commit("setProjects", projects);
         } else {
-          context.commit("setProjects", projects);
+          context.commit("setMessage", "No projects");
         }
       } catch (e) {
-        console.log(e.message)
+        context.commit("setMessage", "An error occurred.");
       }
     },
     async fetchTestimonials(context) {
@@ -72,10 +72,10 @@ export default createStore({
         if (testimonials) {
           context.commit("setTestimonials", testimonials);
         } else {
-          context.commit("setTestimonials", testimonials);
+          context.commit("setMessage", "No testimonials");
         }
       } catch (e) {
-        console.log(e.message)
+        context.commit("setMessage", "An error occurred.");
       }
     },
   },

@@ -1,7 +1,6 @@
 <template>
   <section id="about" class="about">
-    <div class="container">
-      <h1 class="display-2 text-center">About Me</h1>
+    <div class="container mt-5">
       <div class="container" data-aos="fade-right">
         <div class="row mt-3">
           <div class="col">
@@ -19,7 +18,7 @@
                     <h5 class="card-title">Rayhaan Khan</h5>
                     <p class="card-text">
                       My name is Mohamed Rayhaan Khan. <br />
-                      My date of birth is 18/04/2004 <br />
+                      My date of birth is 18/04/2004. <br />
                       My home language is English and I can speak Afrikaans too.
                       <br />
                       I currently live in Cape Town. <br />
