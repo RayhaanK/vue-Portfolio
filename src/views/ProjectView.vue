@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="projects">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
         <div
           class="col g-4 mb-4"

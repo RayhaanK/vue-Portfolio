@@ -74,7 +74,7 @@ export default {};
 
 <style scoped>
 .contact {
-  height: 85vh;
+  min-height: 100vh ;
 }
 form {
   width: 70%;
@@ -123,6 +123,14 @@ label {
 @media (max-width: 370px) {
   .btn1 {
     margin-right: 0.3rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
   }
 }
 </style>
