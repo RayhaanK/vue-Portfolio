@@ -6,6 +6,7 @@
           <img
             src="https://i.postimg.cc/ZnP5Z74Y/rayhaanKhan.png"
             alt="Rayhaan Khan"
+            loading="lazy"
           />
         </div>
         <div class="col colT" data-aos="zoom-in-right">
@@ -183,6 +184,24 @@ i {
 
   img {
     width: 18rem;
+  }
+}
+@media (max-width: 335px) {
+  .colT {
+    width: 300px;
+  }
+
+  .text2 {
+    padding-inline: 0.4rem;
+    font-size: 1.1rem;
+  }
+
+  .subT {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 250px;
   }
 }
 </style>

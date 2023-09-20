@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row rowF">
           <div class="first" data-aos="fade-right" data-aos-duration="1000">
-            <div class="col colE">
+            <div class="col colE" v-if="education">
               <h4 class="mb-3 mx-4">EDUCATION</h4>
               <ul v-for="item in education" :key="item.ID">
                 <li class="bullet">
@@ -19,27 +19,43 @@
                 <li class="lis"><div class="line"></div></li>
               </ul>
             </div>
+            <div class="col colSpinner" v-else>
+              <Spinner />
+            </div>
           </div>
           <div class="second" data-aos="fade-left" data-aos-duration="1000">
             <h4 class="text-center mb-3">SKILLS</h4>
-            <div class="row rowS row-cols-1 row-cols-sm-2 row-cols-lg-3">
+            <div
+              class="row rowS row-cols-1 row-cols-sm-2 row-cols-lg-3"
+              v-if="skills"
+            >
               <div class="col" v-for="item in skills" :key="item.ID">
-                  <i :class="item.icon" style="color: #84a7a1"></i>
-                  <p>{{ item.title }} <br>
-                  <span class="mastery">{{ item.mastery }}</span> <br>
+                <i :class="item.icon" style="color: #84a7a1"></i>
+                <p>
+                  {{ item.title }} <br />
+                  <span class="mastery">{{ item.mastery }}</span> <br />
                   <span class="description">{{ item.description }}</span>
-                  </p>
-                </div>
+                </p>
+              </div>
+            </div>
+            <div class="row rowS" v-else>
+              <div class="col">
+                <Spinner />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 </template>
 
 <script>
+import Spinner from "@/components/SpinnerComp.vue";
 export default {
+  components: {
+    Spinner,
+  },
   computed: {
     education() {
       return this.$store.state.education;
@@ -65,11 +81,18 @@ export default {
   flex-direction: column;
 }
 
+.colSpinner {
+  height: 28vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .first {
   width: 40%;
   border-right: 1px solid #84a7a1;
 }
-
 
 .second {
   width: 60%;
@@ -147,7 +170,6 @@ ul {
   background: rgba(0, 0, 0, 0.2);
 }
 
-
 .mastery {
   font-size: 0.9rem;
   margin-top: 0;
@@ -194,9 +216,9 @@ ul {
   }
 
   .colE {
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-}
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
