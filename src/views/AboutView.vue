@@ -42,7 +42,7 @@
       </div>
       <div class="links" data-aos="fade-left">
         <a
-          href="https://drive.google.com/file/d/1ZqAWPHu4wzKdGO80qUm5uxg9I0hg9-Qs/view?usp=sharing"
+          href="https://drive.google.com/file/d/1xFDJarTB7nzND6xmGpsNF_g4g7b8g4z6/view?usp=share_link"
           target="_blank"
           ><button class="btn1">
             <i class="fa-solid fa-file-pdf fa-2xl" style="color: #84a7a1"></i
