@@ -55,7 +55,7 @@ export default {};
     margin-top: 0.5rem;
     width: 56%;
     border-radius: 2rem;
-    background-color: #0E2954;
+    background-color: #141c27;
 }
 
 li {

@@ -21,7 +21,7 @@
           <div class="contact">
             <router-link to="/about"
               ><button class="btnC">
-                <i class="fa-brands fa-golang fa-2xl" style="color: #84a7a1"></i
+                <i class="fa-brands fa-golang fa-2xl i" style="color: #84a7a1"></i
                 >Find Out More!
               </button></router-link
             >
@@ -42,7 +42,7 @@ export default {};
 }
 
 img {
-  background-color: #0e2954;
+  background-color: #141c27;
   border-radius: 50rem 20rem;
 }
 
@@ -72,20 +72,25 @@ img {
   padding: 0.4rem;
   border-radius: 2rem;
   border: 0;
-  background-color: #0e2954;
-  color: #84a7a1;
+  background-color: #141c27;
 }
 
 .btnC:hover {
-  background-color: #001847;
+  background-color: #0a0d12;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
   transition: 0.2s;
+  color: #64ffda;
   transform: scale(1.1);
+}
+
+i.i:hover {
+  color: #64ffda;
 }
 
 .subT {
   text-align: center;
   font-size: 2rem;
+  color: #64ffda;
 }
 
 .text1 {

@@ -6,6 +6,7 @@ export default createStore({
   state: {
     skills: null,
     education: null,
+    experience: null,
     projects: null,
     testimonials: null,
   },
@@ -16,6 +17,9 @@ export default createStore({
     },
     setEducation(state, value) {
       state.education = value;
+    },
+    setExperience(state, value) {
+      state.experience = value;
     },
     setProjects(state, value) {
       state.projects = value;
@@ -47,6 +51,19 @@ export default createStore({
           context.commit("setEducation", education);
         } else {
           context.commit("setMessage", "No education");
+        }
+      } catch (e) {
+        context.commit("setMessage", "An error occurred.");
+      }
+    },
+    async fetchExperience(context) {
+      try {
+        let res = await fetch(dataUrl);
+        let { experience } = await res.json();
+        if (experience) {
+          context.commit("setExperience", experience);
+        } else {
+          context.commit("setMessage", "No experience");
         }
       } catch (e) {
         context.commit("setMessage", "An error occurred.");

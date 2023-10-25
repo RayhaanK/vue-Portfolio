@@ -17,10 +17,10 @@ export default {
 
 <style>
 #app {
-  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #84A7A1;
+  color: #F6F4EB;
 }
 
 nav {
@@ -29,16 +29,16 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #84A7A1;
+  color: #e0d8ae;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #1F6E8C;
+  color: #09101a;
 }
 
 nav a.router-link-exact-active {
-  color: #1F6E8C;
+  color: #09101a;
 }
 
 Footer {
