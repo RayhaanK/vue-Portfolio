@@ -50,7 +50,7 @@ export default {
 }
 
 .card {
-  background-color: #0e2954;
+  background-color: #141c27;
   color: #84a7a1;
 }
 

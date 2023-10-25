@@ -3,8 +3,8 @@
     <div class="container mt-5">
       <div class="container">
         <div class="row rowF">
-          <div class="first" data-aos="fade-right" data-aos-duration="1000">
-            <div class="col colE" v-if="education">
+          <div class="first" data-aos="fade-right" data-aos-duration="1000" v-if="education">
+            <div class="col colE">
               <h4 class="mb-3 mx-4">EDUCATION</h4>
               <ul v-for="item in education" :key="item.ID">
                 <li class="bullet">
@@ -19,22 +19,35 @@
                 <li class="lis"><div class="line"></div></li>
               </ul>
             </div>
-            <div class="col colSpinner" v-else>
-              <Spinner />
+            <div class="col colE">
+              <h4 class="mb-3 mx-4">Experience</h4>
+              <ul v-for="item in experience" :key="item.ID">
+                <li class="bullet">
+                  {{ item.title }}
+                </li>
+                <li class="none">
+                  {{ item.year }}
+                </li>
+                <li class="none">
+                  {{ item.description }}
+                </li>
+                <li class="lis"><div class="line"></div></li>
+              </ul>
             </div>
+          </div>
+          <div class="col colSpinner" v-else>
+            <Spinner />
           </div>
           <div class="second" data-aos="fade-left" data-aos-duration="1000">
             <h4 class="text-center mb-3">SKILLS</h4>
             <div
-              class="row rowS row-cols-1 row-cols-sm-2 row-cols-lg-3"
+              class="row rowS row-cols-2 row-cols-lg-3 mt-2"
               v-if="skills"
             >
-              <div class="col" v-for="item in skills" :key="item.ID">
-                <i :class="item.icon" style="color: #84a7a1"></i>
+              <div class="col mb-4" v-for="item in skills" :key="item.ID">
+                <i :class="item.icon" style="color: #84a7a1; font-size: 8rem;"></i>
                 <p>
-                  {{ item.title }} <br />
-                  <span class="mastery">{{ item.mastery }}</span> <br />
-                  <span class="description">{{ item.description }}</span>
+                  {{ item.title }}
                 </p>
               </div>
             </div>
@@ -60,12 +73,16 @@ export default {
     education() {
       return this.$store.state.education;
     },
+    experience() {
+      return this.$store.state.experience;
+    },
     skills() {
       return this.$store.state.skills;
     },
   },
   mounted() {
     this.$store.dispatch("fetchEducation");
+    this.$store.dispatch("fetchExperience");
     this.$store.dispatch("fetchSkills");
   },
 };
@@ -76,7 +93,6 @@ export default {
   height: 100vh;
 }
 .colE {
-  height: 70vh;
   display: flex;
   flex-direction: column;
 }
@@ -110,7 +126,6 @@ h4 {
 .lis {
   list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 80%;
 }
@@ -128,7 +143,7 @@ ul {
 }
 
 .line {
-  width: 60%;
+  width: 100%;
   border-bottom: 2px solid #84a7a1;
   margin-top: 2.5rem;
 }
@@ -199,15 +214,16 @@ ul {
     height: max-content;
   }
 }
-@media (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
+@media (max-width: 768px) {
 
   .first {
     width: 100%;
     height: max-content;
     border: none;
+  }
+
+  .rowS {
+    flex-wrap: wrap;
   }
 
   .second {

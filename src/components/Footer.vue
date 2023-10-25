@@ -32,7 +32,7 @@ i {
 
 footer {
   width: 100%;
-  background-color: #0e2954;
+  background-color: #141c27;
   display: flex;
   justify-content: center;
   align-items: center;

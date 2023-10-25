@@ -33,28 +33,34 @@
                       great communication skills and with that I will be able to
                       work with anyone new.
                     </p>
+                    <div class="links">
+                      <a
+                        href="https://drive.google.com/file/d/1xFDJarTB7nzND6xmGpsNF_g4g7b8g4z6/view?usp=share_link"
+                        target="_blank"
+                        ><button class="btn1">
+                          <i
+                            class="fa-solid fa-file-pdf fa-2xl"
+                            style="color: #84a7a1"
+                          ></i
+                          >View My CV
+                        </button></a
+                      >
+                      <router-link to="/resume"
+                        ><button class="btn1">
+                          <i
+                            class="fa-solid fa-paper-plane fa-2xl"
+                            style="color: #84a7a1"
+                          ></i
+                          >View My Resume
+                        </button></router-link
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="links" data-aos="fade-left">
-        <a
-          href="https://drive.google.com/file/d/1xFDJarTB7nzND6xmGpsNF_g4g7b8g4z6/view?usp=share_link"
-          target="_blank"
-          ><button class="btn1">
-            <i class="fa-solid fa-file-pdf fa-2xl" style="color: #84a7a1"></i
-            >View My CV
-          </button></a
-        >
-        <router-link to="/resume"
-          ><button class="btn1">
-            <i class="fa-solid fa-paper-plane fa-2xl" style="color: #84a7a1"></i
-            >View My Resume
-          </button></router-link
-        >
       </div>
     </div>
   </section>
@@ -66,17 +72,16 @@ export default {};
 
 <style scoped>
 .about {
-  height: 100vh;
+  min-height: 85vh;
 }
 .colI {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 24rem;
 }
 
 .card {
-  background-color: #0e2954;
+  background-color: #141c27;
   color: #84a7a1;
   border-radius: 2rem;
 }
@@ -86,8 +91,12 @@ export default {};
   transition: ease-in 0.2s;
 }
 
+.card-body {
+  min-height: 20rem !important;
+}
+
 img {
-  height: 19rem;
+  height: 20rem;
 }
 
 .line {
@@ -97,6 +106,7 @@ img {
 .card-title {
   text-decoration: underline;
   font-size: 2rem;
+  height: 3.5rem;
 }
 
 .card-text {
@@ -104,20 +114,20 @@ img {
   justify-content: center;
   align-items: center;
   height: 20rem;
+  line-height: 2rem;
 }
 
 button {
-  background-color: #0e2954;
   color: #84a7a1;
+  background-color: #09101a;
   border-radius: 1rem;
-  padding: 0.7rem;
+  padding: 0.6rem;
   border: 0;
   margin: 0.7rem;
   width: 13rem;
 }
 
 button:hover {
-  background-color: #001847;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
   transition: 0.2s;
   transform: scale(1.1);
@@ -125,8 +135,19 @@ button:hover {
 
 .links {
   display: flex;
-  justify-content: flex-end;
 }
+
+@media (max-width: 1000px) {
+  button {
+    padding: 0.5rem;
+    /* margin: 0rem; */
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+  }
+
+}
+
 @media (max-width: 768px) {
   .about {
     height: max-content;
@@ -135,6 +156,7 @@ button:hover {
   .colI {
     height: 19rem;
   }
+
   .line {
     border: 0;
   }
@@ -152,6 +174,7 @@ button:hover {
   .links {
     justify-content: space-between;
   }
+  
 }
 
 @media (max-width: 530px) {
@@ -160,12 +183,13 @@ button:hover {
   }
 
   button {
-    padding: 0.6rem;
+    padding: 0.4rem;
     margin: 0rem;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin-bottom: 1rem;
-    width: 9.5rem;
+    width: 6.5rem;
   }
+
   button:hover {
     transition: none;
     transform: none;
