@@ -125,7 +125,7 @@
           </div>
         </form>
         <div
-          class="cardContact d-flex justify-content-center align-items-center mt-5 mt-xl-0"
+          class="cardContact d-flex justify-content-center align-items-center mt-5 mt-xl-0 mb-3"
         >
           <div class="card inf1">
             <div class="container inf">

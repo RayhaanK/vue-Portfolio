@@ -155,8 +155,6 @@ i {
     padding: 0.2rem;
     border-radius: 2rem;
     border: 0;
-    background-color: #0e2954;
-    color: #84a7a1;
   }
   .btnC:hover {
     transition: none;
@@ -165,7 +163,6 @@ i {
 
   img {
     width: 25rem;
-    background-color: #0e2954;
     border-radius: 27rem 10rem;
   }
 }

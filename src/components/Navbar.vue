@@ -63,7 +63,7 @@ li {
 }
 
 button {
-    background-color: #1F6E8C;
+    background-color: #84a7a1;
 }
 
 @media (max-width: 992px) {
