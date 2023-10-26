@@ -21,7 +21,7 @@
           <div class="contact">
             <router-link to="/about"
               ><button class="btnC">
-                <i class="fa-brands fa-golang fa-2xl i" style="color: #84a7a1"></i
+                <i class="fa-brands fa-golang fa-2xl i" style="color: #F6F4EB"></i
                 >Find Out More!
               </button></router-link
             >
@@ -73,6 +73,7 @@ img {
   border-radius: 2rem;
   border: 0;
   background-color: #141c27;
+  color: #F6F4EB;
 }
 
 .btnC:hover {
@@ -81,10 +82,6 @@ img {
   transition: 0.2s;
   color: #64ffda;
   transform: scale(1.1);
-}
-
-i.i:hover {
-  color: #64ffda;
 }
 
 .subT {
