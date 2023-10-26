@@ -182,7 +182,7 @@ form {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 label {
@@ -264,6 +264,12 @@ i:hover {
   .cardContact {
     width: 100%;
   }
+}
+
+@media (max-width: 440px) {
+  .inf1 {
+  width: 100%;
+}
 }
 
 @media (max-width: 370px) {

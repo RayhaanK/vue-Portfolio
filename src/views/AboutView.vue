@@ -140,18 +140,28 @@ button:hover {
 @media (max-width: 1000px) {
   button {
     padding: 0.5rem;
-    /* margin: 0rem; */
     font-size: 0.8rem;
     margin-bottom: 1rem;
     width: 10rem;
   }
 
+  .card-title {
+  text-decoration: underline;
+  font-size: 2rem;
+  height: 4rem;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24rem;
+  line-height: 2rem;
+}
+
 }
 
 @media (max-width: 768px) {
-  .about {
-    height: max-content;
-  }
 
   .colI {
     height: 19rem;
@@ -178,9 +188,6 @@ button:hover {
 }
 
 @media (max-width: 530px) {
-  .about {
-    height: max-content;
-  }
 
   button {
     padding: 0.4rem;
