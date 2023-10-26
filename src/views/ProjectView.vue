@@ -151,6 +151,11 @@ button:hover {
     height: max-content;
   }
 }
+@media (max-width: 768px) {
+ img {
+  width: 230px;
+ }
+}
 @media (max-width: 568px) {
   button:hover {
     transition: none;
@@ -159,6 +164,10 @@ button:hover {
   .card:hover {
     transform: none;
     transition: none;
+  }
+
+  img {
+    width: 250px;
   }
 }
 </style>

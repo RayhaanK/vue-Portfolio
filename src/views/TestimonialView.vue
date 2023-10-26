@@ -80,9 +80,20 @@ img {
     height: max-content;
   }
 }
+
+@media (max-width: 992px) {
+  .img-fluid {
+    width: 220px !important;
+  }
+}
+
 @media (max-width: 767.5px) {
   .line {
     border: 0;
+  }
+
+  .img-fluid {
+    width: 100%;
   }
 }
 @media (max-width: 568px) {

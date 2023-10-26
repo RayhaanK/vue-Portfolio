@@ -41,7 +41,7 @@
           <div class="second" data-aos="fade-left" data-aos-duration="1000">
             <h4 class="text-center mb-3">SKILLS</h4>
             <div
-              class="row rowS row-cols-2 row-cols-lg-3 mt-2"
+              class="row rowS row-cols-1 row-cols-sm-2 row-cols-lg-3 mt-2"
               v-if="skills"
             >
               <div class="col mb-4" v-for="item in skills" :key="item.ID">
